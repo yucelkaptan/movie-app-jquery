@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>What do you want to watch?</h1>
+    <form id="searchForm" action="movielist.html" method="get">
+        <input type="text" placeholder="Search for a movie..." name="query" id="searchBar" class="searchBarStyle">
+    </form>
+    <div id="movie"></div>
+
+    <div class="movieListed">
+        <ul>
+            <li><a href="#">NowPlaying</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#">Top rated</a></li>
+            <li><a href="#">Popular</a></li>
+        </ul>
+    </div>
+
+    <div id="randomMovie"></div>
+    <div id="movieRandom"></div>
+
+    <div id="whitelistButtonContainer">
+        <button id="whitelistButton">Whitelist</button>
+    </div>
+    
+    <script src="./assets/js/whiteListPage.js"></script>
+    <script src="./assets/js/search.js"></script>
+    <script src="./assets/js/populerMovie.js"></script>
+    <script src="./assets/js/randomMovie.js"></script>
+    <script src="./assets//js/movieRandom.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    background-color: rgb(36,42,50);
+}
+/* SEARCHBAR VE H1 OLAN KISIM */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  #searchForm {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+  input {
+    width: 50%;
+    border-radius: 25px;
+    background-color: rgb(58,63,71);
+    border: none;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.searchBarStyle {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 96%;
+}
+
+.search-bar {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    input {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    input {
+        width: 90%;
+        margin-left: 20px;
+    }
+    .search-bar {
+        font-size: 14px;
+    }
+}
+
+/* POPULER MOVİE OLAN KISIM */
+
+#movie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-top: 13px;
+  }
+  
+#movie div {
+    flex: 1;
+    max-width: calc(100% / 6);
+    transition: transform 0.3s ease; 
+  }
+  
+#movie img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+#movie div:hover {
+    transform: scale(1.02);
+    z-index: 1;
+  }
+
+/* movieListed */
+
+.movieListed ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+.movieListed ul a {
+    text-decoration:none ;
+    color: white;
+}
+.movieListed ul li:first-child a {
+    text-decoration: none;
+    border-bottom: 4px solid #3A3F47;
+    padding-bottom: 5px;
+}
+
+/* randomMovie */
+
+#randomMovie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 16px;
+  }
+  
+  #randomMovie div {
+    flex: 1;
+    max-width: calc(100% / 6);
+    transition: transform 0.3s ease; 
+  }
+  
+  #randomMovie img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  #randomMovie div:hover {
+    transform: scale(1.02);
+    z-index: 1;
+  }
+
+  /*movieRandom */
+
+  #movieRandom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 16px;
+    margin-top: 15px;
+  }
+  
+  #movieRandom div {
+    flex: 1;
+    max-width: calc(100% / 6);
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+  }
+  
+  #movieRandom img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  #movieRandom div:hover {
+    transform: scale(1.02);
+    z-index: 1;
+  }
+
+  /* WhiteList Button */
+#whitelistButtonContainer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+#whitelistButton {
+  background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#whitelistButton:hover {
+  background-color: #0056b3;
+}

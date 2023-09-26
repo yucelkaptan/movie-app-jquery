@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(36,42,50);
+}
+
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 100px;
+    
+}
+
+.movie-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.movie-poster {
+    width: 300px;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 25px;
+    
+}
+.movie-release-date {
+    color: white;
+}
+.movie-overview {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 16px;
+    color: white;
+}
+.back-button {
+    margin-bottom: 16px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.whitelist-button {
+    background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+  .whitelist-button:hover {
+    background-color: #0056b3;
+  }
