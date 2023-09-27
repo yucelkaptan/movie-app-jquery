@@ -91,7 +91,8 @@ img {
 #movie div {
     flex: 1;
     max-width: calc(100% / 6);
-    transition: transform 0.3s ease; 
+
+
   }
   
 #movie img {
@@ -100,11 +101,23 @@ img {
     object-fit: cover;
     cursor: pointer;
   }
-  
-#movie div:hover {
-    transform: scale(1.02);
-    z-index: 1;
+  .movie-div {
+    position: relative;
   }
+  
+  .number-div {
+    position: absolute;
+    top: 310px;
+    left: 0;
+    z-index: 2; 
+    color: rgb(11, 7, 235);
+    font-size: 150px;
+    background-color: transparent;
+    padding: 5px;
+  }
+  
+  
+
 
 /* movieListed */
 
@@ -135,7 +148,6 @@ img {
   #randomMovie div {
     flex: 1;
     max-width: calc(100% / 6);
-    transition: transform 0.3s ease; 
   }
   
   #randomMovie img {
@@ -143,10 +155,6 @@ img {
     height: auto;
     object-fit: cover;
     cursor: pointer;
-  }
-  #randomMovie div:hover {
-    transform: scale(1.02);
-    z-index: 1;
   }
 
   /*movieRandom */
@@ -162,7 +170,6 @@ img {
   #movieRandom div {
     flex: 1;
     max-width: calc(100% / 6);
-    transition: transform 0.3s ease; 
     cursor: pointer;
   }
   
@@ -171,10 +178,6 @@ img {
     height: auto;
     object-fit: cover;
     cursor: pointer;
-  }
-  #movieRandom div:hover {
-    transform: scale(1.02);
-    z-index: 1;
   }
 
   /* WhiteList Button */
