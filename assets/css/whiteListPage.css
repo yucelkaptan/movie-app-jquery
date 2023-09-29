@@ -24,6 +24,27 @@ h1 {
     padding: 10px;
 }
 
+@media (max-width: 480px) {
+    #whitelist {
+        display: flex;
+  }
+  .delete-button {
+    display: block;
+    margin-top: 8px;
+    margin-left: 110px;
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .delete-button:hover {
+    background-color: darkred;
+  }
+}
+
 .poster-container {
     flex: 0 0 calc(16.6667% - 10px); 
     margin: 5px; 

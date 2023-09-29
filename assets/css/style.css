@@ -183,7 +183,7 @@ img {
   cursor: pointer;
 }
 
-/* Küçük Ekranlar İçin */
+
 @media (max-width: 768px) {
   #randomMovie div {
       max-width: calc(100% / 3); 

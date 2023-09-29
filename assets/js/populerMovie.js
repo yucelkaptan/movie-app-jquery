@@ -11,8 +11,8 @@ $(document).ready(function() {
             if (posterPath) { 
                 var posterUrl = 'https://image.tmdb.org/t/p/w500' + posterPath;
                 var movieDiv = $('<div class="movie-div">').append('<img src="' + posterUrl + '" alt="Movie Poster" />');
-                var numberDiv = $('<div class="number-div">' + (i + 1) + '</div>'); // Sıra numarası ekleniyor
-                movieDiv.append(numberDiv); // Sıra numarasını movieDiv'e ekliyoruz
+                var numberDiv = $('<div class="number-div">' + (i + 1) + '</div>'); 
+                movieDiv.append(numberDiv); 
                 movieDiv.attr('data-id', movie.id); 
                 movieDiv.click(function() { 
                     var movieId = $(this).attr('data-id'); 

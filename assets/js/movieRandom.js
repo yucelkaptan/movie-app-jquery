@@ -18,7 +18,7 @@ $(document).ready(function() {
             var posterPath = movie.poster_path;
             if (posterPath) { 
                 var posterUrl = 'https://image.tmdb.org/t/p/w500' + posterPath;
-                var movieDetailUrl = 'details.html?id=' + movieId; // Film ID'sini URL'ye ekle
+                var movieDetailUrl = 'details.html?id=' + movieId; 
                 var movieDiv = $('<div>').append('<a href="' + movieDetailUrl + '"><img src="' + posterUrl + '" alt="Movie Poster" /></a>');
                 $('#movieRandom').append(movieDiv);
             }
