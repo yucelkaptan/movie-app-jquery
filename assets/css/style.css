@@ -104,19 +104,45 @@ img {
   .movie-div {
     position: relative;
   }
+
+
+@media (max-width: 768px) {
+  #movie div {
+    max-width: 50%; 
+  }
+  
+  #movie div:nth-child(n + 3) {
+    display: none; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  #movie div {
+    max-width: 100%; 
+  }
+  
+  #movie div:nth-child(n + 3) {
+    display: none;
+  }
+}
   
   .number-div {
     position: absolute;
-    top: 310px;
-    left: 0;
+    top: 360px;
+    left: -5px;
     z-index: 2; 
     color: rgb(11, 7, 235);
-    font-size: 150px;
+    font-size: 100px;
     background-color: transparent;
     padding: 5px;
   }
   
-  
+  @media (max-width: 480px) {
+      .number-div {
+        display: none;
+      }
+  }
 
 
 /* movieListed */
@@ -139,30 +165,43 @@ img {
 /* randomMovie */
 
 #randomMovie {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 16px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 16px;
+}
+
+#randomMovie div {
+  flex: 1;
+  max-width: calc(100% / 6);
+}
+
+#randomMovie img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Küçük Ekranlar İçin */
+@media (max-width: 768px) {
   #randomMovie div {
-    flex: 1;
-    max-width: calc(100% / 6);
+      max-width: calc(100% / 3); 
   }
   
-  #randomMovie img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    cursor: pointer;
+  #randomMovie div:nth-child(n + 4) {
+      display: none; 
   }
+}
+
+
 
   /*movieRandom */
 
   #movieRandom {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 16px;
     margin-top: 15px;
   }
@@ -179,6 +218,16 @@ img {
     object-fit: cover;
     cursor: pointer;
   }
+  
+  @media (max-width: 768px) {
+    #movieRandom div {
+      max-width: calc(100% / 3); 
+    }
+    #movieRandom div:nth-child(n + 4) {
+      display: none; 
+  }
+  }
+  
 
   /* WhiteList Button */
 #whitelistButtonContainer {
@@ -187,17 +236,15 @@ img {
     right: 10px;
 }
 #whitelistButton {
-  background-color: #007bff;
     border: none;
     color: white;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 2rem;
     cursor: pointer;
     border-radius: 4px;
+    background-color: transparent;
 }
-#whitelistButton:hover {
-  background-color: #0056b3;
-}
+
