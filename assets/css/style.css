@@ -138,11 +138,12 @@ img {
     padding: 5px;
   }
   
-  @media (max-width: 480px) {
-      .number-div {
-        display: none;
-      }
-  }
+  @media (max-width: 768px) {
+    .number-div {
+      top: 200px;
+      font-size: 4rem;
+    }
+}
 
 
 /* movieListed */
